@@ -1,0 +1,140 @@
+.termos {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.termos h2 {
+  max-width: 32ch;
+
+  margin-top: 64px;
+  margin-bottom: 16px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 700;
+
+  color: var(--grafite);
+}
+
+.termos h2:first-child {
+  margin-top: 0;
+}
+
+.termos p {
+  max-width: 75ch;
+
+  margin-bottom: 16px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+
+  color: var(--cinza-escuro);
+}
+
+.termos ul {
+  max-width: 70ch;
+
+  margin-top: 20px;
+  margin-bottom: 32px;
+
+  padding-left: 24px;
+}
+
+.termos li {
+  margin-bottom: 12px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: var(--cinza-escuro);
+
+  position: relative;
+}
+
+.termos li::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  background-color: var(--bronze);
+
+  position: absolute;
+  left: -20px;
+  top: 11px;
+
+  transform: rotate(45deg);
+}
+
+.termos strong {
+  font-weight: 700;
+
+  color: var(--grafite);
+}
+
+.termos a {
+  color: var(--bronze);
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.termos a:hover {
+  color: var(--dourado);
+}
+
+#privacidade,
+#cookies {
+  scroll-margin-top: 40px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+  .termos {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .termos h2 {
+    margin-top: 48px;
+
+    font-size: 22px;
+  }
+
+  .termos p,
+  .termos li {
+    font-size: 16px;
+  }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+  .termos {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .termos h2 {
+    margin-top: 40px;
+    margin-bottom: 12px;
+
+    font-size: 20px;
+  }
+
+  .termos p {
+    line-height: 1.65;
+  }
+
+  .termos ul {
+    padding-left: 20px;
+  }
+}

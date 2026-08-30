@@ -1,0 +1,50 @@
+/* TIPOGRAFIA AION / 1618 */
+
+.texto-grande {
+  font-family: "Manrope", sans-serif;
+  font-size: 64px;
+  line-height: 1.125;
+  font-weight: 700;
+}
+
+.texto-medio {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.texto-pequeno {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.texto-tecnico {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 1200px) {
+  .texto-grande {
+    font-size: 48px;
+  }
+
+  .texto-medio {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .texto-grande {
+    font-size: 32px;
+  }
+
+  .texto-medio {
+    font-size: 18px;
+  }
+}

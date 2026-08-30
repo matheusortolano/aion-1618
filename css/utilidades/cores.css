@@ -1,0 +1,38 @@
+:root {
+  --preto: #000000;
+  --grafite: #0b0b0d;
+  --grafite-claro: #111111;
+
+  --cinza-escuro: #525252;
+  --cinza: #b8b5ae;
+  --offwhite: #f2efe8;
+  --branco: #ffffff;
+
+  --bronze: #b08d57;
+  --dourado: #c6a15b;
+  --dourado-claro: #d2b06a;
+  --bronze-escuro: #9c7a3c;
+}
+.cor-preto {
+  color: var(--preto);
+}
+
+.cor-grafite {
+  color: var(--grafite);
+}
+
+.cor-cinza {
+  color: var(--cinza);
+}
+
+.cor-offwhite {
+  color: var(--offwhite);
+}
+
+.cor-bronze {
+  color: var(--bronze);
+}
+
+.cor-dourado {
+  color: var(--dourado);
+}

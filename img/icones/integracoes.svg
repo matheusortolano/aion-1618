@@ -1,0 +1,31 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ícone inspirado em Python: serpente minimalista, sem malha/conexões -->
+  <path
+    d="M15.8 4.2
+       C15.8 2.9 14.7 2 13.4 2
+       H9.3
+       C8 2 7 2.9 7 4.2
+       V6.4
+       H12.2
+       C13.8 6.4 15 7.6 15 9.2
+       C15 10.8 13.8 12 12.2 12
+       H8.7
+       C6.1 12 4 14.1 4 16.7
+       C4 19.6 6.4 22 9.3 22
+       H13.4
+       C14.7 22 15.8 21.1 15.8 19.8
+       V17.6
+       H10.6
+       C9 17.6 7.8 16.4 7.8 14.8
+       C7.8 13.2 9 12 10.6 12
+       H14.1
+       C16.7 12 18.8 9.9 18.8 7.3
+       C18.8 4.4 16.4 2 13.5 2"
+    stroke="#B08D57"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="12.8" cy="4.5" r="0.85" fill="#B08D57"/>
+  <circle cx="11.2" cy="19.5" r="0.85" fill="#B08D57"/>
+</svg>
