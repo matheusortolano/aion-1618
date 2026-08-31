@@ -1,0 +1,393 @@
+/* ========================================
+   ORÇAMENTO AION
+======================================== */
+
+#orcamento {
+  background:
+    linear-gradient(
+      var(--grafite) 620px,
+      var(--offwhite) 0
+    );
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+
+  padding-bottom: 120px;
+}
+
+
+.orcamento-produto {
+  padding: 60px;
+
+  background-color: var(--preto);
+
+  border-radius: 5px 0 0 5px;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.orcamento-produto > h2 {
+  margin-bottom: 32px;
+}
+
+
+.orcamento-opcoes {
+  display: grid;
+
+  gap: 16px;
+
+  margin-bottom: 40px;
+}
+
+
+.orcamento-opcao {
+  display: grid;
+
+  gap: 6px;
+
+  padding: 20px;
+
+  position: relative;
+
+  background-color: var(--grafite-claro);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s,
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+
+.orcamento-opcao:hover {
+  border-color: var(--bronze);
+
+  transform: translateX(4px);
+}
+
+
+.orcamento-opcao input {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+
+.orcamento-opcao::before {
+  content: "";
+
+  width: 12px;
+  height: 12px;
+
+  position: absolute;
+
+  top: 22px;
+  right: 20px;
+
+  border: 1px solid var(--bronze);
+
+  transform: rotate(45deg);
+
+  transition:
+    background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+
+.orcamento-opcao:has(input:checked) {
+  background-color: var(--grafite);
+
+  border-color: var(--bronze);
+}
+
+
+.orcamento-opcao:has(input:checked)::before {
+  background-color: var(--bronze);
+
+  box-shadow:
+    0 0 0 4px rgba(176, 141, 87, 0.15);
+}
+
+
+.orcamento-opcao strong {
+  display: block;
+
+  padding-right: 32px;
+}
+
+
+.orcamento-plano {
+  padding-top: 32px;
+
+  border-top: 1px solid var(--cinza-escuro);
+}
+
+
+.orcamento-plano h3 {
+  margin-bottom: 12px;
+}
+
+
+.orcamento-plano p {
+  max-width: 35ch;
+}
+
+.orcamento-formulario {
+  padding: 60px;
+
+  background-color: var(--branco);
+
+  border-radius: 0 5px 5px 0;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--grafite);
+
+  background-color: var(--offwhite);
+
+  border: 1px solid var(--cinza);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s,
+    background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+
+.form select:focus {
+  outline: none;
+
+  border-color: var(--bronze);
+
+  background-color: var(--branco);
+
+  box-shadow:
+    0 0 0 2px rgba(176, 141, 87, 0.25);
+}
+
+
+.orcamento-processo {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+.orcamento-processo > h2 {
+  margin-bottom: 60px;
+}
+
+
+.orcamento-processo-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+}
+
+.orcamento-processo-grid > div {
+  padding: 32px;
+
+  position: relative;
+
+  background-color: var(--branco);
+
+  border: 1px solid var(--cinza);
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+
+.orcamento-processo-grid > div::after {
+  content: "";
+
+  width: 90px;
+  height: 90px;
+
+  position: absolute;
+
+  top: -45px;
+  right: -45px;
+
+  border: 1px solid var(--bronze);
+
+  transform: rotate(45deg);
+
+  opacity: 0.35;
+}
+
+.orcamento-processo-grid > div > span {
+  display: block;
+
+  margin-bottom: 16px;
+}
+
+.orcamento-processo-grid h3 {
+  margin-bottom: 12px;
+
+  position: relative;
+}
+
+.orcamento-processo-grid h3::before {
+  content: "";
+
+  display: block;
+
+  width: 16px;
+  height: 4px;
+
+  margin-bottom: 20px;
+
+  background-color: var(--bronze);
+
+  box-shadow:
+    5px -5px 0 var(--bronze),
+    10px -10px 0 var(--bronze);
+}
+
+
+.orcamento-processo-grid p {
+  max-width: 38ch;
+}
+
+
+@media (max-width: 800px) {
+
+  #orcamento {
+    background:
+      linear-gradient(
+        var(--grafite) 420px,
+        var(--offwhite) 0
+      );
+  }
+
+
+  .orcamento {
+    grid-template-columns: 1fr;
+
+    padding-bottom: 80px;
+  }
+
+
+  .orcamento-produto,
+  .orcamento-formulario {
+    padding: 40px;
+  }
+
+
+  .orcamento-produto {
+    border-radius: 5px 5px 0 0;
+  }
+
+
+  .orcamento-formulario {
+    border-radius: 0 0 5px 5px;
+  }
+
+
+  .orcamento-processo {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+
+  .orcamento-processo > h2 {
+    margin-bottom: 40px;
+  }
+
+
+  .orcamento-processo-grid {
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+  }
+
+
+  .orcamento-processo-grid > div {
+    padding: 28px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  #orcamento {
+    background:
+      linear-gradient(
+        var(--grafite) 360px,
+        var(--offwhite) 0
+      );
+  }
+
+
+  .orcamento {
+    padding-bottom: 60px;
+  }
+
+
+  .orcamento-produto,
+  .orcamento-formulario {
+    padding: 32px 20px;
+  }
+
+
+  .orcamento-produto > h2 {
+    margin-bottom: 24px;
+  }
+
+
+  .orcamento-opcao {
+    padding: 18px 16px;
+  }
+
+
+  .orcamento-opcao::before {
+    top: 20px;
+    right: 16px;
+  }
+
+
+  .orcamento-processo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+
+  .orcamento-processo > h2 {
+    margin-bottom: 32px;
+  }
+
+
+  .orcamento-processo-grid > div {
+    padding: 24px;
+  }
+
+}

@@ -1,0 +1,858 @@
+/* PÁGINAS DE PRODUTO
+   SYSTEMS / WEB / AUTOMATE
+*/
+
+.produto-bg {
+  background-color: var(--preto);
+}
+
+
+/* ESTRUTURA PRINCIPAL */
+
+.produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: start;
+
+  gap: 40px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+/* TEXTO DO TÍTULO */
+
+#systems .titulo p,
+#web .titulo p,
+#automate .titulo p {
+  text-transform: uppercase;
+}
+
+
+/* CONTEÚDO */
+
+.produto-conteudo > p {
+  margin-bottom: 32px;
+}
+
+
+/* CONTRATAR */
+
+.produto-contratar {
+  display: grid;
+
+  grid-template-columns: max-content auto;
+
+  align-items: center;
+  justify-items: start;
+
+  gap: 8px 12px;
+
+  margin-bottom: 40px;
+}
+
+.produto-contratar a {
+  grid-row: span 2;
+}
+
+.produto-contratar span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 4px 8px;
+
+  background-color: var(--grafite-claro);
+
+  border-radius: 4px;
+}
+
+
+/* TÍTULOS INTERNOS */
+
+.produto-conteudo > h2 {
+  text-transform: uppercase;
+
+  letter-spacing: 0.015em;
+
+  margin-bottom: 12px;
+}
+
+
+/* RECURSOS */
+
+.produto-informacoes,
+.produto-ficha {
+  padding: 32px;
+
+  background-color: var(--grafite-claro);
+
+  border-radius: 4px;
+}
+
+.produto-informacoes {
+  margin-bottom: 40px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 32px;
+}
+
+.produto-informacoes h3 {
+  margin-bottom: 8px;
+}
+
+
+/* SÍMBOLO AION */
+
+.produto-informacoes h3::before {
+  content: "";
+
+  display: block;
+
+  width: 16px;
+  height: 4px;
+
+  margin-bottom: 12px;
+
+  background-color: var(--bronze);
+
+  box-shadow:
+    5px -5px 0 var(--bronze),
+    10px -10px 0 var(--bronze);
+}
+
+
+/* FICHA TÉCNICA */
+
+.produto-ficha li {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 8px 0;
+
+  border-bottom: 1px solid var(--cinza-escuro);
+}
+
+.produto-ficha li:last-child {
+  border-bottom: none;
+}
+
+.produto-ficha span {
+  text-align: right;
+}
+
+
+/* ========================================
+   VISUAL AUTOMATE
+======================================== */
+
+.automate-visual {
+  min-height: 520px;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 60px;
+
+  background-color: var(--grafite-claro);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* LINHA VERTICAL */
+
+.automate-visual::before {
+  content: "";
+
+  position: absolute;
+
+  left: 61px;
+  top: 80px;
+  bottom: 80px;
+
+  width: 1px;
+
+  background-color: var(--bronze);
+}
+
+
+/* ETAPAS */
+
+.automate-etapa {
+  display: grid;
+
+  grid-template-columns: 44px 1fr;
+
+  column-gap: 20px;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.automate-etapa > span {
+  grid-row: 1 / 3;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  background-color: var(--grafite);
+
+  border: 1px solid var(--bronze);
+  border-radius: 4px;
+}
+
+.automate-etapa strong {
+  align-self: end;
+}
+
+.automate-etapa p {
+  margin-top: 4px;
+}
+
+
+/* DETALHE DE FUNDO */
+
+.automate-visual::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -90px;
+  bottom: -90px;
+
+  border: 1px solid var(--bronze);
+
+  transform: rotate(45deg);
+
+  opacity: 0.35;
+}
+
+
+/* ========================================
+   RESPONSIVO
+======================================== */
+
+@media (max-width: 800px) {
+
+  .produto {
+    grid-template-columns: 1fr;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .automate-visual {
+    min-height: auto;
+
+    padding: 40px;
+
+    gap: 48px;
+
+    grid-row: 2;
+  }
+
+  .produto-informacoes {
+    gap: 24px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .produto {
+    gap: 32px;
+  }
+
+  .produto-informacoes {
+    grid-template-columns: 1fr;
+
+    padding: 24px;
+  }
+
+  .produto-ficha {
+    padding: 24px;
+  }
+
+  .produto-contratar {
+    grid-template-columns: 1fr;
+  }
+
+  .produto-contratar a {
+    grid-row: auto;
+
+    margin-bottom: 8px;
+  }
+
+  .automate-visual {
+    padding: 32px 24px;
+
+    gap: 40px;
+  }
+
+  .automate-visual::before {
+    left: 45px;
+
+    top: 65px;
+    bottom: 65px;
+  }
+
+  .automate-etapa {
+    grid-template-columns: 40px 1fr;
+
+    column-gap: 16px;
+  }
+
+  .automate-etapa > span {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .produto-informacoes {
+    padding: 20px;
+  }
+
+  .produto-ficha {
+    padding: 20px;
+  }
+
+  .produto-ficha li {
+    flex-direction: column;
+
+    gap: 4px;
+  }
+
+  .produto-ficha span {
+    text-align: left;
+  }
+}
+
+/* ========================================
+   VISUAL AION WEB
+======================================== */
+
+.web-visual {
+  min-height: 520px;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  background-color: var(--grafite-claro);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+
+/* DETALHE DE FUNDO */
+
+.web-visual::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  left: -90px;
+  bottom: -90px;
+
+  border: 1px solid var(--bronze);
+
+  transform: rotate(45deg);
+
+  opacity: 0.35;
+}
+
+
+/* JANELA DO NAVEGADOR */
+
+.web-browser {
+  width: 100%;
+  max-width: 440px;
+
+  position: relative;
+  z-index: 1;
+
+  background-color: var(--grafite);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 6px;
+
+  overflow: hidden;
+}
+
+
+/* TOPO DO NAVEGADOR */
+
+.web-browser-topo {
+  height: 42px;
+
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  border-bottom: 1px solid var(--cinza-escuro);
+}
+
+.web-browser-topo span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background-color: var(--bronze);
+}
+
+.web-browser-topo span:nth-child(2) {
+  opacity: 0.65;
+}
+
+.web-browser-topo span:nth-child(3) {
+  opacity: 0.35;
+}
+
+
+/* CONTEÚDO DO SITE */
+
+.web-browser-conteudo {
+  min-height: 330px;
+
+  padding: 40px 32px;
+}
+
+
+/* LINHAS SIMULANDO TEXTO */
+
+.web-linha {
+  width: 70%;
+  height: 8px;
+
+  margin-top: 12px;
+
+  background-color: var(--cinza-escuro);
+
+  border-radius: 2px;
+}
+
+.web-linha-grande {
+  width: 90%;
+  height: 28px;
+
+  margin-top: 32px;
+
+  background-color: var(--offwhite);
+}
+
+.web-linha-curta {
+  width: 50%;
+}
+
+
+/* BOTÃO SIMULADO */
+
+.web-botao {
+  width: 110px;
+  height: 36px;
+
+  margin-top: 28px;
+
+  background-color: var(--bronze);
+
+  border-radius: 4px;
+}
+
+
+/* CARDS */
+
+.web-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+
+  margin-top: 40px;
+}
+
+.web-cards div {
+  height: 70px;
+
+  background-color: var(--grafite-claro);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+  .web-visual {
+    min-height: 420px;
+
+    padding: 40px;
+
+    grid-row: 2;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .web-visual {
+    min-height: 360px;
+
+    padding: 24px;
+  }
+
+  .web-browser-conteudo {
+    min-height: 280px;
+
+    padding: 32px 24px;
+  }
+
+  .web-cards {
+    gap: 8px;
+  }
+
+  .web-cards div {
+    height: 54px;
+  }
+
+}
+
+/* ========================================
+   VISUAL AION SYSTEMS
+======================================== */
+
+.systems-visual {
+  min-height: 520px;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  background-color: var(--grafite-claro);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+
+/* DETALHE GEOMÉTRICO */
+
+.systems-visual::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -90px;
+  top: -90px;
+
+  border: 1px solid var(--bronze);
+
+  transform: rotate(45deg);
+
+  opacity: 0.35;
+}
+
+
+/* DASHBOARD */
+
+.systems-dashboard {
+  width: 100%;
+  max-width: 460px;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  position: relative;
+  z-index: 1;
+
+  background-color: var(--grafite);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 6px;
+}
+
+
+/* TOPO */
+
+.systems-topo {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid var(--cinza-escuro);
+}
+
+.systems-status {
+  width: 8px;
+  height: 8px;
+
+  background-color: var(--bronze);
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 0 4px rgba(176, 141, 87, 0.15);
+}
+
+
+/* INDICADORES */
+
+.systems-indicadores {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+.systems-indicadores > div {
+  padding: 16px;
+
+  background-color: var(--grafite-claro);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+}
+
+.systems-indicadores span,
+.systems-indicadores strong {
+  display: block;
+}
+
+.systems-indicadores span {
+  margin-bottom: 8px;
+}
+
+
+/* GRÁFICO */
+
+.systems-grafico {
+  height: 150px;
+
+  margin-top: 20px;
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: end;
+
+  gap: 12px;
+
+  background-color: var(--grafite-claro);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+}
+
+.systems-grafico span {
+  flex: 1;
+
+  min-width: 12px;
+
+  background-color: var(--bronze);
+
+  border-radius: 2px 2px 0 0;
+}
+
+.systems-grafico span:nth-child(1) {
+  height: 35%;
+}
+
+.systems-grafico span:nth-child(2) {
+  height: 55%;
+}
+
+.systems-grafico span:nth-child(3) {
+  height: 45%;
+}
+
+.systems-grafico span:nth-child(4) {
+  height: 75%;
+}
+
+.systems-grafico span:nth-child(5) {
+  height: 65%;
+}
+
+.systems-grafico span:nth-child(6) {
+  height: 90%;
+}
+
+
+/* TABELA */
+
+.systems-tabela {
+  margin-top: 20px;
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+.systems-tabela > div {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr;
+
+  gap: 16px;
+
+  padding: 12px 16px;
+
+  border-bottom: 1px solid var(--cinza-escuro);
+}
+
+.systems-tabela > div:last-child {
+  border-bottom: none;
+}
+
+.systems-tabela span {
+  height: 6px;
+
+  background-color: var(--cinza-escuro);
+
+  border-radius: 2px;
+}
+
+.systems-tabela div span:first-child {
+  background-color: var(--cinza);
+}
+
+.systems-tabela div:nth-child(2) span:last-child,
+.systems-tabela div:nth-child(3) span:last-child {
+  background-color: var(--bronze);
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+  .systems-visual {
+    min-height: 440px;
+
+    padding: 40px;
+
+    grid-row: 2;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .systems-visual {
+    min-height: 380px;
+
+    padding: 24px;
+  }
+
+  .systems-dashboard {
+    padding: 16px;
+  }
+
+  .systems-indicadores {
+    gap: 8px;
+  }
+
+  .systems-indicadores > div {
+    padding: 12px 8px;
+  }
+
+  .systems-indicadores strong {
+    font-size: 16px;
+  }
+
+  .systems-indicadores span {
+    font-size: 10px;
+  }
+
+  .systems-grafico {
+    height: 120px;
+
+    gap: 8px;
+
+    padding: 16px;
+  }
+
+  .systems-tabela > div {
+    gap: 8px;
+
+    padding: 10px 12px;
+  }
+
+}

@@ -1,0 +1,88 @@
+.vantagens-bg {
+  background-color: var(--grafite);
+}
+
+.vantagens {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.vantagens h2 {
+  margin-bottom: 60px;
+}
+
+.vantagens ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 80px;
+}
+
+.vantagens li {
+  position: relative;
+}
+
+.vantagens h3 {
+  margin-bottom: 12px;
+}
+
+
+/* DEGRAUS AION */
+
+.vantagens h3::before {
+  content: "";
+
+  display: block;
+
+  width: 20px;
+  height: 4px;
+
+  margin-bottom: 20px;
+
+  background-color: var(--bronze);
+
+  box-shadow:
+    6px -6px 0 var(--bronze),
+    12px -12px 0 var(--bronze);
+}
+
+.vantagens p {
+  max-width: 36ch;
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+  .vantagens {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .vantagens h2 {
+    margin-bottom: 40px;
+  }
+
+  .vantagens ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .vantagens ul {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .vantagens p {
+    max-width: none;
+  }
+}

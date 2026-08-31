@@ -1,0 +1,113 @@
+/* FORMULÁRIO */
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+
+/* CAMPO COM DUAS COLUNAS */
+
+.form .col-2 {
+  grid-column: span 2;
+}
+
+
+/* CAMPOS */
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--grafite);
+
+  background-color: var(--offwhite);
+
+  border: 1px solid var(--cinza);
+
+  border-radius: 4px;
+
+  transition:
+    border-color 0.2s,
+    background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+
+/* PLACEHOLDER */
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: var(--cinza-escuro);
+}
+
+
+/* FOCO */
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="tel"]:focus,
+.form textarea:focus {
+  outline: none;
+
+  border-color: var(--bronze);
+
+  background-color: var(--branco);
+
+  box-shadow: 0 0 0 2px rgba(176, 141, 87, 0.25);
+}
+
+
+/* TEXTAREA */
+
+.form textarea {
+  resize: vertical;
+}
+
+
+/* BOTÃO */
+
+.form button {
+  justify-self: start;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .form .col-2 {
+    grid-column: 1;
+  }
+
+}

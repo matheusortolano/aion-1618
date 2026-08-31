@@ -1,0 +1,196 @@
+/* SUPORTE AION */
+
+.suporte-bg {
+  background-color: var(--offwhite);
+
+  box-shadow:
+    inset 0 120px var(--preto),
+    inset 0 -120px var(--preto);
+}
+
+
+/* ESTRUTURA */
+
+.suporte {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 40px;
+}
+
+
+/* VISUAL */
+
+.suporte-visual {
+  min-height: 520px;
+
+  padding: 48px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+
+  background-color: var(--grafite);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+
+/* DETALHE GEOMÉTRICO */
+
+.suporte-visual::before {
+  content: "";
+
+  width: 180px;
+  height: 180px;
+
+  position: absolute;
+
+  top: 60px;
+  right: -90px;
+
+  border: 1px solid var(--bronze);
+
+  transform: rotate(45deg);
+
+  opacity: 0.4;
+}
+
+
+/* DEGRAUS */
+
+.suporte-visual::after {
+  content: "";
+
+  width: 80px;
+  height: 4px;
+
+  position: absolute;
+
+  left: 48px;
+  bottom: 48px;
+
+  background-color: var(--bronze);
+
+  box-shadow:
+    12px -12px 0 var(--bronze),
+    24px -24px 0 var(--bronze);
+}
+
+
+/* TEXTOS DO VISUAL */
+
+.suporte-visual > span {
+  margin-bottom: 24px;
+}
+
+.suporte-visual > strong {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 52px;
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+.suporte-visual > p {
+  max-width: 30ch;
+}
+
+
+/* CONTEÚDO */
+
+.suporte-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+
+  align-self: center;
+}
+
+.suporte h2 {
+  margin-bottom: 32px;
+}
+
+.suporte-conteudo > p {
+  max-width: 42ch;
+
+  margin-bottom: 32px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+  .suporte-bg {
+    box-shadow:
+      inset 0 -60px var(--preto);
+  }
+
+  .suporte {
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+  }
+
+  .suporte-conteudo {
+    grid-row: 1;
+
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .suporte-visual {
+    min-height: 360px;
+
+    padding: 40px;
+  }
+
+  .suporte-visual > strong {
+    font-size: 48px;
+  }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+  .suporte-conteudo {
+    padding-top: 40px;
+  }
+
+  .suporte h2 {
+    margin-bottom: 24px;
+  }
+
+  .suporte-conteudo > p {
+    margin-bottom: 24px;
+  }
+
+  .suporte-visual {
+    min-height: 320px;
+
+    padding: 32px 24px;
+  }
+
+  .suporte-visual > strong {
+    font-size: 40px;
+  }
+
+  .suporte-visual::after {
+    left: 24px;
+    bottom: 32px;
+  }
+
+}

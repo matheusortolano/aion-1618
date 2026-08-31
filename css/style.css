@@ -1,25 +1,47 @@
+/* GLOBAL */
+
 @import "./global/global.css";
-
-@import "./utilidades/tipografia.css";
-
-@import "./utilidades/cores.css";
-
 @import "./global/header.css";
-
 @import "./global/footer.css";
 
+
+/* UTILIDADES */
+
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
 @import "./utilidades/componentes.css";
 
+
+/* HOME */
+
 @import "./home/introducao.css";
-
 @import "./home/tecnologia.css";
-
-@import "./solucoes/solucoes-lista.css";
-
 @import "./home/parceiros.css";
-
 @import "./home/depoimento.css";
 
-@import "./planos/planos.css";
 
-@import "./termos/termos.css"
+/* SOLUÇÕES */
+
+@import "./solucoes/solucoes-lista.css";
+@import "./solucoes/solucoes.css";
+@import "./solucoes/produto.css";
+@import "./solucoes/suporte.css";
+
+
+/* PLANOS */
+
+@import "./planos/planos.css";
+@import "./planos/vantagens.css";
+@import "./planos/perguntas.css";
+
+
+/* CONTATO */
+
+@import "./contato/contato.css";
+@import "./utiliddades/formulario.css";
+@import "./contato/atendimento.css";
+@import "./orcamento/orcamento.css";
+
+/* TERMOS */
+
+@import "./termos/termos.css";

@@ -1,0 +1,302 @@
+/* ========================================
+   CONTATO
+======================================== */
+
+#contato {
+  background:
+    linear-gradient(
+      var(--grafite) 620px,
+      var(--offwhite) 0
+    );
+}
+
+
+/* ESTRUTURA */
+
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+
+  padding-bottom: 120px;
+}
+
+
+/* BLOCOS */
+
+.contato-dados,
+.contato-formulario {
+  padding: 60px;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* DADOS */
+
+.contato-dados {
+  border-radius: 5px 0 0 5px;
+
+  background-color: var(--preto);
+}
+
+
+/* FORMULÁRIO */
+
+.contato-formulario {
+  border-radius: 0 5px 5px 0;
+
+  background-color: var(--branco);
+}
+
+
+/* TÍTULO */
+
+.contato-dados h2 {
+  margin-bottom: 60px;
+}
+
+
+/* ========================================
+   ENDEREÇO
+======================================== */
+
+.contato-endereco {
+  margin-bottom: 32px;
+
+  padding-left: 28px;
+
+  position: relative;
+}
+
+
+/* MARCADOR AION */
+
+.contato-endereco::before {
+  content: "";
+
+  width: 8px;
+  height: 8px;
+
+  position: absolute;
+
+  top: 10px;
+  left: 0;
+
+  background-color: var(--bronze);
+
+  transform: rotate(45deg);
+}
+
+
+.contato-endereco p {
+  margin-bottom: 8px;
+}
+
+
+/* ========================================
+   MEIOS DE CONTATO
+======================================== */
+
+.contato-meios {
+  font-style: normal;
+
+  margin-bottom: 32px;
+}
+
+
+.contato-meios a {
+  display: block;
+
+  max-width: max-content;
+
+  margin-bottom: 8px;
+
+  padding-left: 28px;
+
+  position: relative;
+
+  transition: color 0.2s;
+}
+
+
+.contato-meios a:hover {
+  color: var(--bronze);
+}
+
+
+/* MARCADORES */
+
+.contato-meios a::before {
+  content: "";
+
+  width: 8px;
+  height: 8px;
+
+  position: absolute;
+
+  left: 0;
+  top: 9px;
+
+  background-color: var(--bronze);
+}
+
+
+/* E-MAIL PRINCIPAL */
+
+.contato-meios a:first-child::before {
+  transform: rotate(45deg);
+}
+
+
+/* SEGUNDO E-MAIL */
+
+.contato-meios a:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+
+.contato-meios a:nth-child(2)::before {
+  transform: rotate(45deg);
+  opacity: 0.65;
+}
+
+
+/* TELEFONE */
+
+.contato-meios a:nth-child(3)::before {
+  border-radius: 50%;
+}
+
+
+/* ========================================
+   REDES SOCIAIS
+======================================== */
+
+.contato-redes {
+  display: flex;
+
+  gap: 32px;
+
+  padding-left: 28px;
+}
+
+
+.contato-redes img {
+  width: 24px;
+  height: 24px;
+
+  display: block;
+}
+
+
+.contato-redes a {
+  transition: transform 0.2s;
+}
+
+
+.contato-redes a:hover {
+  transform: translateY(-3px);
+}
+
+
+/* ========================================
+   RESPONSIVO
+======================================== */
+
+@media (max-width: 800px) {
+
+  #contato {
+    background:
+      linear-gradient(
+        var(--grafite) 420px,
+        var(--offwhite) 0
+      );
+  }
+
+
+  .contato {
+    grid-template-columns: 1fr;
+
+    padding-bottom: 80px;
+  }
+
+
+  .contato-dados,
+  .contato-formulario {
+    padding: 40px;
+  }
+
+
+  .contato-dados {
+    border-radius: 5px 5px 0 0;
+  }
+
+
+  .contato-formulario {
+    border-radius: 0 0 5px 5px;
+  }
+
+
+  .contato-dados h2 {
+    margin-bottom: 32px;
+  }
+
+
+  .contato-meios a:nth-child(2) {
+    margin-bottom: 24px;
+  }
+
+
+  .contato-redes {
+    margin-bottom: 12px;
+  }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+  #contato {
+    background:
+      linear-gradient(
+        var(--grafite) 360px,
+        var(--offwhite) 0
+      );
+  }
+
+
+  .contato {
+    padding-bottom: 60px;
+  }
+
+
+  .contato-dados,
+  .contato-formulario {
+    padding: 32px 20px;
+  }
+
+
+  .contato-dados h2 {
+    margin-bottom: 32px;
+  }
+
+
+  .contato-endereco {
+    padding-left: 24px;
+  }
+
+
+  .contato-meios a {
+    padding-left: 24px;
+  }
+
+
+  .contato-redes {
+    gap: 24px;
+
+    padding-left: 24px;
+  }
+
+}
