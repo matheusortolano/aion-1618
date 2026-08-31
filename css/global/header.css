@@ -26,7 +26,8 @@
   font-weight: 500;
 }
 
-.header-menu a::after {
+.header-menu a::after,
+.header-menu a.ativo::after {
   content: "";
   display: block;
   height: 2px;

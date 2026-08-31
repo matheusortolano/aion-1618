@@ -65,19 +65,24 @@
   transition: transform 0.3s;
 }
 
-.perguntas dt:hover::after {
+.perguntas div.ativa dt::after {
   transform: rotate(225deg);
 }
 
 /* RESPOSTA */
 
 .perguntas dd {
+  display: none;
+
   max-width: 80ch;
 
   padding-left: 24px;
   padding-top: 16px;
 
   line-height: 1.6;
+}
+.perguntas div.ativa dd {
+  display: block;
 }
 
 /* TABLET */

@@ -856,3 +856,108 @@
   }
 
 }
+
+.web-browser {
+  transition:
+    width 0.4s,
+    max-width 0.4s;
+}
+
+
+/* DESKTOP */
+
+.web-visual[data-device="desktop"] .web-browser {
+  width: 100%;
+  max-width: 440px;
+}
+
+
+/* TABLET */
+
+.web-visual[data-device="tablet"] .web-browser {
+  width: 70%;
+  max-width: 330px;
+}
+
+
+/* MOBILE */
+
+.web-visual[data-device="mobile"] .web-browser {
+  width: 45%;
+  max-width: 220px;
+}
+
+
+/* CONTROLES */
+
+.web-controles {
+  position: absolute;
+
+  left: 50%;
+  bottom: 20px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+
+  gap: 8px;
+
+  z-index: 2;
+}
+
+
+.web-controles button {
+  padding: 8px 12px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+
+  color: var(--cinza);
+
+  background-color: var(--grafite);
+
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+
+.web-controles button:hover,
+.web-controles button.ativo {
+  color: var(--offwhite);
+
+  border-color: var(--bronze);
+
+  background-color: var(--grafite-claro);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+  .web-visual[data-device="tablet"] .web-browser {
+    width: 80%;
+  }
+
+  .web-visual[data-device="mobile"] .web-browser {
+    width: 60%;
+  }
+
+  .web-controles {
+    bottom: 12px;
+  }
+
+  .web-controles button {
+    padding: 6px 8px;
+
+    font-size: 10px;
+  }
+
+}
