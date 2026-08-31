@@ -3,18 +3,25 @@
 ========================= */
 
 
-/* FUNDO DA SOLUÇÃO DESTACADA */
+/* FUNDOS */
+
+.solucao-clara {
+  background-color: var(--offwhite);
+}
 
 .solucao-bg {
   background-color: var(--grafite);
 }
 
 
-/* ESTRUTURA PRINCIPAL */
+/* =========================
+   ESTRUTURA PRINCIPAL
+========================= */
 
 .solucao {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   gap: 40px;
 
   padding-top: 60px;
@@ -113,6 +120,7 @@
 
 .solucao ul {
   display: grid;
+
   gap: 16px;
 
   margin-bottom: 32px;
@@ -133,10 +141,10 @@
   width: 7px;
   height: 7px;
 
-  background-color: var(--bronze);
-
   position: absolute;
   left: 0;
+
+  background-color: var(--bronze);
 
   transform: rotate(45deg);
 }

@@ -1,3 +1,11 @@
+/* ========================================
+   ATENDIMENTO AION
+======================================== */
+
+.atendimento-bg {
+  background-color: var(--offwhite);
+}
+
 .atendimento {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -7,6 +15,9 @@
   margin-bottom: 60px;
 }
 
+
+/* GRID */
+
 .atendimento-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -15,19 +26,27 @@
 }
 
 
+/* CARD */
+
 .atendimento-item {
   padding: 40px;
 
-  background-color: var(--offwhite);
+  background-color: var(--branco);
 
   border: 1px solid var(--cinza);
-
   border-radius: 4px;
 
   position: relative;
 
   overflow: hidden;
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
+
+
+/* DETALHE GEOMÉTRICO */
 
 .atendimento-item::before {
   content: "";
@@ -47,6 +66,9 @@
   opacity: 0.35;
 }
 
+
+/* ETIQUETA */
+
 .atendimento-item > span {
   display: block;
 
@@ -54,11 +76,14 @@
 }
 
 
+/* TÍTULO */
+
 .atendimento-item h3 {
   margin-bottom: 16px;
 }
 
 
+/* TEXTO */
 
 .atendimento-item > p {
   max-width: 45ch;
@@ -67,6 +92,7 @@
 }
 
 
+/* INFORMAÇÕES */
 
 .atendimento-info {
   display: grid;
@@ -83,6 +109,8 @@
 }
 
 
+/* MARCADOR AION */
+
 .atendimento-info span::before {
   content: "";
 
@@ -97,11 +125,7 @@
 }
 
 
-.atendimento-item {
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-}
+/* HOVER */
 
 .atendimento-item:hover {
   transform: translateY(-4px);
@@ -109,6 +133,11 @@
   box-shadow:
     0 8px 24px rgba(0, 0, 0, 0.08);
 }
+
+
+/* ========================================
+   TABLET
+======================================== */
 
 @media (max-width: 800px) {
 
@@ -129,6 +158,10 @@
 
 }
 
+
+/* ========================================
+   CELULAR
+======================================== */
 
 @media (max-width: 500px) {
 

@@ -1,13 +1,33 @@
-/* PERGUNTAS FREQUENTES */
+/* ========================================
+   PERGUNTAS FREQUENTES
+======================================== */
+
+
+/* FUNDO GERAL */
+
+.perguntas-bg {
+  background-color: var(--branco);
+}
+
+
+/* ESTRUTURA */
 
 .perguntas {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
+
+/* TÍTULO */
+
 .perguntas h2 {
   margin-bottom: 60px;
 }
+
+
+/* ========================================
+   ITENS
+======================================== */
 
 .perguntas dl > div {
   padding: 20px;
@@ -15,26 +35,34 @@
   border-radius: 4px;
 }
 
+
+/* EFEITO ZEBRA */
+
 .perguntas dl > div:nth-child(odd) {
   background-color: var(--offwhite);
 }
 
-/* PERGUNTA */
+
+/* ========================================
+   PERGUNTA
+======================================== */
 
 .perguntas dt {
   display: grid;
+
   grid-template-columns: auto 1fr auto;
 
   align-items: center;
 
   gap: 12px;
 
-  cursor: pointer;
-  cursor: pointer;
   font-weight: 700;
+
+  cursor: pointer;
 }
 
-/* DETALHE AION */
+
+/* MARCADOR AION */
 
 .perguntas dt::before {
   content: "";
@@ -46,6 +74,7 @@
 
   background-color: var(--bronze);
 }
+
 
 /* SETA */
 
@@ -65,11 +94,10 @@
   transition: transform 0.3s;
 }
 
-.perguntas div.ativa dt::after {
-  transform: rotate(225deg);
-}
 
-/* RESPOSTA */
+/* ========================================
+   RESPOSTA
+======================================== */
 
 .perguntas dd {
   display: none;
@@ -81,13 +109,37 @@
 
   line-height: 1.6;
 }
+
+
+/* RESPOSTA ABERTA */
+
 .perguntas div.ativa dd {
   display: block;
 }
 
-/* TABLET */
+
+/* SETA ABERTA */
+
+.perguntas div.ativa dt::after {
+  transform: rotate(225deg);
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.perguntas dt:hover {
+  color: var(--bronze);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
 
 @media (max-width: 800px) {
+
   .perguntas {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -109,11 +161,16 @@
     padding-left: 22px;
     padding-top: 12px;
   }
+
 }
 
-/* CELULAR */
+
+/* ========================================
+   CELULAR
+======================================== */
 
 @media (max-width: 600px) {
+
   .perguntas {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -149,4 +206,5 @@
     padding-left: 16px;
     padding-top: 12px;
   }
+
 }
