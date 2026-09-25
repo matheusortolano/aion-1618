@@ -1,18 +1,22 @@
 # AION / 1618
 
-Website institucional fictício desenvolvido como projeto prático de estudo em desenvolvimento web.
+Fictional institutional website developed as a practical web development study project.
 
-A **AION / 1618** representa uma software house focada em sistemas empresariais, desenvolvimento web e automação de processos.
+**AION / 1618** represents a fictional software company focused on business systems, web development and process automation.
 
-O projeto foi desenvolvido durante meus estudos de HTML, CSS e JavaScript, aplicando conceitos de estrutura semântica, responsividade, organização de código, interações com JavaScript e publicação em ambiente web.
+The project was created during my studies of HTML, CSS and JavaScript, applying concepts such as semantic structure, responsive design, code organization, JavaScript interactions and web deployment.
 
-## 🌐 Projeto online
+---
 
-Acesse o projeto:
+## Live Demo
+
+Access the project:
 
 https://matheusortolano.github.io/aion-1618/
 
-## 💻 Tecnologias utilizadas
+---
+
+## Tech Stack
 
 - HTML5
 - CSS3
@@ -26,69 +30,82 @@ https://matheusortolano.github.io/aion-1618/
 - NPM
 - Clean CSS
 
-## 📚 Conceitos aplicados
+---
 
-Durante o desenvolvimento foram utilizados conceitos como:
+## Concepts Practiced
 
-- HTML semântico
-- Estruturação de páginas
-- Componentização de estilos
-- Variáveis CSS
-- Flexbox e CSS Grid
-- Layout responsivo
-- Pseudo-classes e pseudo-elementos
-- Formulários
-- Acessibilidade básica
-- Manipulação do DOM
-- Eventos em JavaScript
-- Parâmetros de URL
-- FAQ interativa
-- Animações de interface
-- Otimização e minificação de CSS
-- Versionamento com Git e GitHub
-- Deploy com GitHub Pages
+The project was used to practice concepts such as:
 
-## 🧩 Soluções fictícias
+- semantic HTML;
+- page structure;
+- organized CSS architecture;
+- CSS variables;
+- Flexbox;
+- CSS Grid;
+- responsive layouts;
+- pseudo-classes;
+- pseudo-elements;
+- forms;
+- basic accessibility;
+- DOM manipulation;
+- JavaScript events;
+- URL parameters;
+- interactive FAQ components;
+- interface animations;
+- CSS optimization and minification;
+- Git version control;
+- deployment with GitHub Pages.
 
-O projeto apresenta três linhas de serviços:
+---
+
+## Fictional Solutions
+
+The website presents three fictional service areas.
 
 ### AION SYSTEMS
 
-Desenvolvimento de sistemas empresariais sob medida, dashboards, bancos de dados e integrações.
+Custom business systems, dashboards, databases and integrations.
 
 ### AION WEB
 
-Criação de websites institucionais e landing pages responsivas com foco em experiência e performance.
+Institutional websites and responsive landing pages focused on user experience and performance.
 
 ### AION AUTOMATE
 
-Automação de processos, integrações via API e conexão entre diferentes ferramentas.
+Process automation, API integrations and connections between different tools and platforms.
 
-## 📄 Páginas do projeto
+---
 
-O website conta com:
+## Pages
+
+The website includes:
 
 - Home
-- Soluções
+- Solutions
 - AION Systems
 - AION Web
 - AION Automate
-- Planos
-- Contato
-- Orçamento
-- Termos e Privacidade
+- Plans
+- Contact
+- Quote Request
+- Terms and Privacy
 
-## ⚙️ JavaScript
+---
 
-Algumas das interações implementadas incluem:
+## JavaScript Features
 
-- identificação do link ativo no menu;
-- seleção automática de soluções e planos por parâmetros na URL;
-- perguntas frequentes com abertura e fechamento das respostas;
-- visualização Desktop, Tablet e Mobile na página AION Web;
-- animações de entrada de elementos.
+Some of the implemented interactions include:
 
-## 📁 Organização
+- active navigation link detection;
+- automatic solution selection through URL parameters;
+- automatic plan selection through URL parameters;
+- interactive FAQ opening and closing;
+- desktop, tablet and mobile previews on the AION Web page;
+- element entrance animations.
+
+---
+
+## Project Structure
 
 ```text
 aion-1618/
@@ -101,9 +118,11 @@ aion-1618/
 │   ├── orcamento/
 │   ├── termos/
 │   └── utilidades/
+│
 ├── img/
 ├── js/
 ├── solucoes/
+│
 ├── index.html
 ├── solucoes.html
 ├── planos.html
@@ -111,3 +130,100 @@ aion-1618/
 ├── orcamento.html
 ├── termos.html
 └── README.md
+```
+
+---
+
+## Responsive Design
+
+The project was designed to support different screen sizes using:
+
+- flexible layouts;
+- CSS Grid;
+- Flexbox;
+- media queries;
+- responsive spacing;
+- adaptive navigation;
+- reusable layout patterns.
+
+The interface was created with desktop, tablet and mobile experiences in mind.
+
+---
+
+## Styling Architecture
+
+CSS files are separated by page and responsibility.
+
+The structure includes:
+
+- global styles;
+- page-specific styles;
+- reusable utilities;
+- layout rules;
+- responsive behavior.
+
+This organization was used to practice maintainable CSS structure in a multi-page project.
+
+---
+
+## URL Parameters
+
+Some project pages use URL parameters to improve navigation between sections.
+
+This allows pages such as plans or quote requests to automatically identify the selected service or product context.
+
+Example concept:
+
+```text
+orcamento.html?solucao=aion-web
+```
+
+JavaScript reads the parameter and updates the interface accordingly.
+
+---
+
+## Accessibility
+
+Basic accessibility practices were considered during development, including:
+
+- semantic HTML elements;
+- meaningful navigation structure;
+- form labels;
+- keyboard-compatible interactive elements;
+- responsive layouts;
+- content hierarchy.
+
+---
+
+## Deployment
+
+The project is deployed using GitHub Pages.
+
+Production files are served directly from the repository without a backend.
+
+GitHub Pages is used as the hosting environment for the static website.
+
+---
+
+## Project Purpose
+
+AION / 1618 was developed as a study project to consolidate front-end fundamentals and apply them in a complete multi-page website instead of isolated exercises.
+
+The project helped reinforce practical knowledge of:
+
+- HTML structure;
+- CSS organization;
+- responsive layouts;
+- JavaScript interactions;
+- DOM manipulation;
+- Git workflow;
+- GitHub repositories;
+- static website deployment.
+
+---
+
+## Project Status
+
+Portfolio and study project completed.
+
+The current version focuses on front-end fundamentals using HTML, CSS and JavaScript without frameworks or backend services.
